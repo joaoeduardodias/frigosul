@@ -1,4 +1,7 @@
+import logoImg from '@/assets/whats.svg'
 import { CircleDollarSign, LineChart, Plus, Users2 } from 'lucide-react'
+import Image from 'next/image'
+import { GraphicBar } from './components/GraphicBar'
 import { Header } from './components/Header'
 
 export default function Home() {
@@ -34,6 +37,73 @@ export default function Home() {
           </p>
         </div>
       </section>
+      <main className="ml-4 mt-8 grid grid-cols-2 gap-8">
+        <div className="rounded-md border p-4 ">
+          <p className="ml-4 text-sm">Vendas por mês</p>
+          <GraphicBar />
+        </div>
+        <div className="rounded-md border p-4">
+          <p className="ml-4 text-sm">Novos clientes</p>
+          <ul className="mt-4 space-y-4 ">
+            <li className="flex justify-between px-4 ">
+              <div className="flex flex-col">
+                <strong className="">João Dias</strong>
+                <span className="text-xs text-zinc-700">(67) 99890-8771</span>
+              </div>
+              <button className="rounded-md bg-transparent  transition-all hover:border  hover:border-green-600 ">
+                <Image
+                  src={logoImg}
+                  alt="Logo do whatsapp"
+                  width={30}
+                  height={30}
+                />
+              </button>
+            </li>
+            <li className="flex justify-between px-4 ">
+              <div className="flex flex-col">
+                <strong className="">João Dias</strong>
+                <span className="text-xs text-zinc-700">(67) 99890-8771</span>
+              </div>
+              <button className="rounded-md bg-transparent  transition-all hover:border  hover:border-green-600 ">
+                <Image
+                  src={logoImg}
+                  alt="Logo do whatsapp"
+                  width={30}
+                  height={30}
+                />
+              </button>
+            </li>
+            <li className="flex justify-between px-4 ">
+              <div className="flex flex-col">
+                <strong className="">João Dias</strong>
+                <span className="text-xs text-zinc-700">(67) 99890-8771</span>
+              </div>
+              <button className="rounded-md bg-transparent  transition-all hover:border  hover:border-green-600 ">
+                <Image
+                  src={logoImg}
+                  alt="Logo do whatsapp"
+                  width={30}
+                  height={30}
+                />
+              </button>
+            </li>
+            <li className="flex justify-between px-4 ">
+              <div className="flex flex-col">
+                <strong className="">João Dias</strong>
+                <span className="text-xs text-zinc-700">(67) 99890-8771</span>
+              </div>
+              <button className="rounded-md bg-transparent  transition-all hover:border  hover:border-green-600 ">
+                <Image
+                  src={logoImg}
+                  alt="Logo do whatsapp"
+                  width={30}
+                  height={30}
+                />
+              </button>
+            </li>
+          </ul>
+        </div>
+      </main>
     </div>
   )
 }
