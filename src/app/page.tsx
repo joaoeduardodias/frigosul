@@ -1,13 +1,11 @@
 import logoImg from '@/assets/whats.svg'
 import { CircleDollarSign, LineChart, Plus, Users2 } from 'lucide-react'
 import Image from 'next/image'
-import { GraphicBar } from './components/GraphicBar'
-import { Header } from './components/Header'
+import { GraphicBar } from '../components/GraphicBar'
 
 export default function Home() {
   return (
-    <div className="flex-1">
-      <Header />
+    <>
       <section className="ml-4 mt-4 flex items-center space-x-4">
         <div className="min-w-[15rem] space-y-4 rounded-md border border-slate-300 bg-white p-5 shadow-sm">
           <div className="flex items-center justify-between">
@@ -37,7 +35,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <main className="ml-4 mt-8 grid grid-cols-2 gap-8">
+      <main className="mt-8 grid grid-cols-2 gap-8 px-4">
         <div className="rounded-md border p-4 ">
           <p className="ml-4 text-sm">Vendas por mês</p>
           <GraphicBar />
@@ -104,6 +102,6 @@ export default function Home() {
           </ul>
         </div>
       </main>
-    </div>
+    </>
   )
 }
