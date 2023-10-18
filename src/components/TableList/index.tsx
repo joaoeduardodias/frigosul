@@ -7,8 +7,8 @@ export function TableList() {
       className="mb-4 h-72 overflow-auto rounded-md border shadow-sm"
       type="scroll"
     >
-      <table className="w-full table-fixed border-collapse ">
-        <ScrollArea.Viewport className="h-full w-full overflow-y-scroll">
+      <ScrollArea.Viewport className="overflow-y-scroll">
+        <table className="w-full table-fixed border-collapse ">
           <thead className="border-b">
             <tr className=" text-left">
               <th className=" px-4">Nome</th>
@@ -94,14 +94,14 @@ export function TableList() {
               statusSale="Cancel"
             />
           </tbody>
-        </ScrollArea.Viewport>
-        <ScrollArea.Scrollbar
-          orientation="vertical"
-          className="flex w-2 touch-none  select-none  flex-col bg-zinc-400 p-1 "
-        >
-          <ScrollArea.Thumb className="relative flex-1 rounded-lg bg-zinc-900 " />
-        </ScrollArea.Scrollbar>
-      </table>
+        </table>
+      </ScrollArea.Viewport>
+      <ScrollArea.Scrollbar
+        orientation="vertical"
+        className="flex w-2 touch-none  select-none  flex-col bg-zinc-400 p-1 "
+      >
+        <ScrollArea.Thumb className="relative flex-1 rounded-lg bg-zinc-900 " />
+      </ScrollArea.Scrollbar>
     </ScrollArea.Root>
   )
 }

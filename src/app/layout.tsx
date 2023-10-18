@@ -19,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
+        suppressHydrationWarning={true}
         className={`${inter.className} flex  overflow-hidden bg-white antialiased`}
       >
         <Sidebar />

@@ -2,14 +2,12 @@
 import * as Dialog from '@radix-ui/react-dialog'
 import { Phone, X } from 'lucide-react'
 import * as Input from '../Input'
+import { Select } from '../Select'
+import { SelectItem } from '../Select/SelectItem'
 
-interface ModalAddClientProps {
-  isOpen?: boolean
-}
-
-export function ModalAddClient({ isOpen }: ModalAddClientProps) {
+export function ModalAddClient() {
   return (
-    <Dialog.Root open={isOpen}>
+    <Dialog.Root>
       <Dialog.Trigger asChild>
         <button className="ml-auto rounded-sm bg-green-700 px-2 py-1 text-white">
           Adicionar
@@ -26,7 +24,7 @@ export function ModalAddClient({ isOpen }: ModalAddClientProps) {
               </button>
             </Dialog.Close>
           </div>
-          <form className="flex w-full flex-col">
+          <form className="flex w-full flex-col space-y-4">
             <div className="flex flex-col gap-1">
               <label
                 htmlFor="name"
@@ -54,7 +52,27 @@ export function ModalAddClient({ isOpen }: ModalAddClientProps) {
                 <Input.Control id="phone" placeholder="Digite o telefone..." />
               </Input.Root>
             </div>
-            <button type="submit">Adicionar</button>
+            <div className="flex flex-col gap-1">
+              <label
+                htmlFor="day"
+                className="ml-1 text-sm font-medium text-zinc-800"
+              >
+                Dia de atendimento
+              </label>
+              <Select placeholder="Select a day">
+                <SelectItem text="Segunda-Feira" value="seg" />
+                <SelectItem text="Terça-Feira" value="ter" />
+                <SelectItem text="Quarta-Feira" value="qua" />
+                <SelectItem text="Quinta-Feira" value="qui" />
+                <SelectItem text="Sexta-Feira" value="sex" />
+              </Select>
+            </div>
+            <button
+              type="submit"
+              className="rounded-md bg-green-600 py-1 text-white transition-colors hover:bg-green-700"
+            >
+              Adicionar
+            </button>
           </form>
         </Dialog.Content>
       </Dialog.Portal>

@@ -14,9 +14,10 @@ export function Header() {
       <Image
         src="https://github.com/joaoeduardodias.png"
         alt="Profile"
-        className="h-10 w-10 rounded-full object-cover"
-        width={40}
-        height={40}
+        className=" w-12 rounded-full object-cover"
+        width="0"
+        height="0"
+        sizes="100vw"
       />
     </header>
   )
