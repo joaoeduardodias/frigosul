@@ -4,7 +4,7 @@ import { TableItem } from './TableItem'
 export function TableList() {
   return (
     <ScrollArea.Root
-      className="mb-4 h-72 overflow-hidden rounded-md border shadow-sm"
+      className="mb-4 h-2/3 overflow-hidden rounded-md border shadow-sm lg:h-72"
       type="scroll"
     >
       <ScrollArea.Viewport className="h-full w-full overflow-scroll ">

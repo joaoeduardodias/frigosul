@@ -14,8 +14,8 @@ export function ModalAddClient() {
         </button>
       </Dialog.Trigger>
       <Dialog.Portal>
-        <Dialog.Overlay className="fixed inset-0  bg-blue-950/30" />
-        <Dialog.Content className="fixed left-1/2 top-1/2 flex w-1/3 -translate-x-1/2 -translate-y-1/2 flex-col  gap-3 rounded-md bg-white p-4 shadow-md">
+        <Dialog.Overlay className="fixed inset-0 z-[21] bg-blue-950/30" />
+        <Dialog.Content className="fixed left-1/2 top-1/2 z-[22] flex min-w-[90%] -translate-x-1/2 -translate-y-1/2 flex-col gap-3  rounded-md bg-white p-4 shadow-md lg:w-1/3">
           <div className="flex items-center justify-between">
             <Dialog.Title>Adicionar novo cliente</Dialog.Title>
             <Dialog.Close asChild>
