@@ -19,7 +19,7 @@ export function TabItem({ day, isSelected = false }: TabItemProps) {
       {isSelected && (
         <motion.div
           layoutId="activeTab"
-          className="absolute -bottom-px left-0 right-0 h-0.5 bg-red-600"
+          className="absolute -bottom-px left-0 right-0 h-1 bg-red-600  lg:h-0.5"
         />
       )}
     </Tabs.Trigger>

@@ -42,60 +42,64 @@ export default function Home() {
         </div>
         <div className="rounded-md border p-4">
           <p className="ml-4 text-sm">Novos clientes</p>
-          <ul className="mt-4 space-y-4 ">
-            <li className="flex justify-between px-4 ">
-              <div className="flex flex-col">
-                <strong className="">João Dias</strong>
-                <span className="text-xs text-zinc-700">(67) 99890-8771</span>
+          <ul className="mt-2 divide-y rounded-md border">
+            <li className="flex items-center justify-between   px-2 py-2">
+              <div className="flex flex-col lg:flex-row lg:items-center lg:gap-3">
+                <strong className="whitespace-nowrap  text-zinc-900">
+                  João Dias
+                </strong>
+                <span className="text-xs text-zinc-700 lg:text-sm ">
+                  (67) 99890-8771
+                </span>
               </div>
-              <button className="rounded-md bg-transparent  transition-all hover:border  hover:border-green-600 ">
+              <button className="flex items-center justify-center rounded-md bg-green-200 px-2  py-0.5 text-sm  transition-all hover:border-green-800 hover:bg-green-400">
+                Conversar
                 <Image
                   src={logoImg}
                   alt="Logo do whatsapp"
-                  width={30}
-                  height={30}
+                  className="h-6 w-6"
+                  width="0"
+                  height="0"
                 />
               </button>
             </li>
-            <li className="flex justify-between px-4 ">
-              <div className="flex flex-col">
-                <strong className="">João Dias</strong>
-                <span className="text-xs text-zinc-700">(67) 99890-8771</span>
+            <li className="flex items-center justify-between   px-2 py-2">
+              <div className="flex flex-col lg:flex-row lg:items-center lg:gap-3">
+                <strong className="whitespace-nowrap  text-zinc-900">
+                  João Dias
+                </strong>
+                <span className="text-xs text-zinc-700 lg:text-sm ">
+                  (67) 99890-8771
+                </span>
               </div>
-              <button className="rounded-md bg-transparent  transition-all hover:border  hover:border-green-600 ">
+              <button className="flex items-center justify-center rounded-md bg-green-200 px-2  py-0.5 text-sm  transition-all hover:border-green-800 hover:bg-green-400">
+                Conversar
                 <Image
                   src={logoImg}
                   alt="Logo do whatsapp"
-                  width={30}
-                  height={30}
+                  className="h-6 w-6"
+                  width="0"
+                  height="0"
                 />
               </button>
             </li>
-            <li className="flex justify-between px-4 ">
-              <div className="flex flex-col">
-                <strong className="">João Dias</strong>
-                <span className="text-xs text-zinc-700">(67) 99890-8771</span>
+            <li className="flex items-center justify-between   px-2 py-2">
+              <div className="flex flex-col lg:flex-row lg:items-center lg:gap-3">
+                <strong className="whitespace-nowrap  text-zinc-900">
+                  João Dias
+                </strong>
+                <span className="text-xs text-zinc-700 lg:text-sm ">
+                  (67) 99890-8771
+                </span>
               </div>
-              <button className="rounded-md bg-transparent  transition-all hover:border  hover:border-green-600 ">
+              <button className="flex items-center justify-center rounded-md bg-green-200 px-2  py-0.5 text-sm  transition-all hover:border-green-800 hover:bg-green-400">
+                Conversar
                 <Image
                   src={logoImg}
                   alt="Logo do whatsapp"
-                  width={30}
-                  height={30}
-                />
-              </button>
-            </li>
-            <li className="flex justify-between px-4 ">
-              <div className="flex flex-col">
-                <strong className="">João Dias</strong>
-                <span className="text-xs text-zinc-700">(67) 99890-8771</span>
-              </div>
-              <button className="rounded-md bg-transparent  transition-all hover:border  hover:border-green-600 ">
-                <Image
-                  src={logoImg}
-                  alt="Logo do whatsapp"
-                  width={30}
-                  height={30}
+                  className="h-6 w-6"
+                  width="0"
+                  height="0"
                 />
               </button>
             </li>

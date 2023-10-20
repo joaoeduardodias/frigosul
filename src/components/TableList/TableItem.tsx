@@ -43,7 +43,13 @@ export function TableItem({ statusSale, name, phone }: TableItemProps) {
       <td>
         <button className="mx-auto flex items-center justify-center rounded-md bg-green-200 px-2  py-0.5 text-sm  transition-all hover:border-green-800 hover:bg-green-400">
           Conversar
-          <Image src={logoImg} alt="Logo do whatsapp" width={25} height={25} />
+          <Image
+            src={logoImg}
+            alt="Logo do whatsapp"
+            className="h-6 w-6"
+            width="0"
+            height="0"
+          />
         </button>
       </td>
     </tr>

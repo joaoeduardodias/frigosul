@@ -15,18 +15,23 @@ export function GraphicBar() {
     <Bar
       data={{
         labels: [
-          '2023-01',
-          '2023-02',
-          '2023-03',
-          '2023-04',
-          '2023-05',
-          '2023-06',
-          '2023-07',
+          'Jan',
+          'Fev',
+          'Mar',
+          'Abr',
+          'Mai',
+          'Jun',
+          'Jul',
+          'Ago',
+          'Set',
+          'Out',
+          'Nov',
+          'Dez',
         ],
         datasets: [
           {
-            data: [100, 120, 115, 134, 168, 132, 120],
-            backgroundColor: 'purple',
+            data: [100, 120, 115, 134, 168, 132, 120, 115, 134, 168, 132, 150],
+            backgroundColor: '#0076F5',
           },
         ],
       }}
