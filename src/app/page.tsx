@@ -6,8 +6,8 @@ import { GraphicBar } from '../components/GraphicBar'
 export default function Home() {
   return (
     <>
-      <section className="mt-4 flex items-center space-x-4 px-4 lg:px-6">
-        <div className="min-w-[15rem] space-y-4 rounded-md border border-slate-300 bg-white p-5 shadow-sm">
+      <section className=" mt-4 flex flex-wrap items-center justify-center gap-4 px-4 md:justify-normal md:space-y-0 md:px-6">
+        <div className=" w-full  max-w-xs space-y-4 rounded-md border border-slate-300 bg-white p-5 shadow-sm">
           <div className="flex items-center justify-between">
             <strong className="text-xs font-normal">Valor total</strong>
             <CircleDollarSign className="h-4 w-4 text-zinc-500" />
@@ -16,7 +16,7 @@ export default function Home() {
             R$: 180.000,00
           </p>
         </div>
-        <div className="min-w-[15rem] space-y-4 rounded-md border border-slate-300 bg-white p-5 shadow-sm">
+        <div className=" w-full  max-w-xs space-y-4 rounded-md border border-slate-300 bg-white p-5 shadow-sm">
           <div className="flex items-center justify-between">
             <strong className="text-xs font-normal">Clientes Atendidos</strong>
             <Users2 className="h-4 w-4 text-zinc-500" />
@@ -25,7 +25,7 @@ export default function Home() {
             <Plus /> 200
           </p>
         </div>
-        <div className="min-w-[15rem] space-y-4 rounded-md border border-slate-300 bg-white p-5 shadow-sm">
+        <div className=" w-full  max-w-xs space-y-4 rounded-md border border-slate-300 bg-white p-5 shadow-sm">
           <div className="flex items-center justify-between">
             <strong className="text-xs font-normal">Vendas Realizadas</strong>
             <LineChart className="h-4 w-4 text-zinc-500" />
@@ -35,7 +35,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <main className="lg:px6 mt-8 grid grid-cols-2 gap-8 px-4">
+      <main className="lg:px6 mb-4 mt-8  grid grid-cols-1  gap-8 px-5 lg:grid-cols-2">
         <div className="rounded-md border p-4 ">
           <p className="ml-4 text-sm">Vendas por mês</p>
           <GraphicBar />

@@ -8,7 +8,7 @@ export function Header() {
     <header
       className={`${
         pathName === '/clients' ? 'hidden' : 'flex'
-      } mt-16  border-b px-4 lg:mt-0 lg:flex lg:py-5 lg:pl-8`}
+      } mx-auto mt-16 flex justify-center border-b px-4 pb-2 text-center lg:mt-0 lg:py-5 lg:pl-8 lg:text-left`}
     >
       <div className="flex flex-col">
         <strong className="text-xl font-semibold text-slate-800">
