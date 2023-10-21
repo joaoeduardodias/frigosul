@@ -7,7 +7,7 @@ export function Header() {
   return (
     <header
       className={`${
-        pathName === '/clients' ? 'hidden' : 'flex'
+        pathName === '/clients' ? 'hidden lg:flex' : 'flex'
       } mx-auto mt-20 flex justify-center border-b px-4 pb-2 text-center md:mt-28 lg:mt-0 lg:py-5 lg:pl-8 lg:text-left`}
     >
       <div className="flex flex-col">
