@@ -4,11 +4,11 @@ import { TableItem } from './TableItem'
 export function TableList() {
   return (
     <ScrollArea.Root
-      className="mb-4 h-2/3 overflow-hidden rounded-md border shadow-sm lg:h-72"
+      className="mb-4 h-2/3  overflow-hidden rounded-md border shadow-sm "
       type="scroll"
     >
-      <ScrollArea.Viewport className="h-full w-full overflow-scroll ">
-        <table className="w-[40rem] table-fixed border-collapse lg:w-full">
+      <ScrollArea.Viewport className="h-full w-full overflow-scroll">
+        <table className="w-[40rem] table-fixed border-collapse md:w-full">
           <thead className="border-b">
             <tr className=" text-left">
               <th className=" px-4">Nome</th>

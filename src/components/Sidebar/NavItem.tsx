@@ -1,27 +1,29 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import { usePathname, useRouter } from 'next/navigation'
 interface NavItemProps {
   address: string
   title: string
+  onClosedSideBar: () => void
 }
 
-export function NavItem({ address, title }: NavItemProps) {
+export function NavItem({ address, title, onClosedSideBar }: NavItemProps) {
   const router = useRouter()
   const pathName = usePathname()
 
   return (
-    <motion.div
-      layoutId="activeNav"
-      className={`w-full cursor-pointer text-sm font-medium  transition-all hover:text-red-500 ${
+    <div
+      className={`cursor-pointer text-lg font-medium text-zinc-800 transition-all hover:text-red-500  lg:w-full lg:text-sm ${
         address === pathName
-          ? 'border-r-2 border-red-500 text-red-500'
+          ? ' lg:border-r-2 lg:border-red-500 lg:text-red-500'
           : 'text-zinc-800'
       }`}
-      onClick={() => router.push(address)}
+      onClick={() => {
+        onClosedSideBar()
+        router.push(address)
+      }}
     >
       <span>{title}</span>
-    </motion.div>
+    </div>
   )
 }

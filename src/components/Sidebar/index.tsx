@@ -5,11 +5,16 @@ import { useState } from 'react'
 import { NavItem } from './NavItem'
 export function Sidebar() {
   const [open, setOpen] = useState<boolean>(false)
+
+  function handleClosedSidebar() {
+    setOpen(false)
+  }
+
   return (
     <Collapsible.Root
       open={open}
       onOpenChange={setOpen}
-      className="fixed left-0 right-0 top-0 z-20 flex flex-col gap-6 border-b bg-white p-4 data-[state=open]:bottom-0 lg:right-auto  lg:border-r lg:px-5 lg:py-8 lg:data-[state=closed]:bottom-0"
+      className="fixed left-0 right-0 top-0 z-20 flex flex-col gap-6 border-b bg-white p-4 data-[state=open]:bottom-0 lg:relative lg:right-auto lg:w-40 lg:border-r lg:py-8 lg:pb-0 lg:pl-8  lg:pr-0 lg:data-[state=closed]:bottom-0"
     >
       <div className="flex items-center justify-between">
         <p className=" w-full text-center">Logo</p>
@@ -21,13 +26,18 @@ export function Sidebar() {
       </div>
       <Collapsible.Content
         forceMount
-        className="flex flex-1 flex-col gap-4  pl-6 data-[state=closed]:hidden lg:data-[state=closed]:flex"
-        // className="mt-16 flex flex-1 flex-col items-start gap-4  pl-6 data-[state=closed]:hidden lg:data-[state=closed]:flex"
+        className="flex flex-1 flex-col items-center justify-center gap-6  data-[state=closed]:hidden  lg:mt-6 lg:items-start lg:justify-normal lg:data-[state=closed]:flex"
       >
-        <nav>
-          <NavItem address="/" title="Dashboard" />
-          <NavItem address="/clients" title="Clientes" />
-        </nav>
+        <NavItem
+          address="/"
+          title="Dashboard"
+          onClosedSideBar={handleClosedSidebar}
+        />
+        <NavItem
+          address="/clients"
+          title="Clientes"
+          onClosedSideBar={handleClosedSidebar}
+        />
       </Collapsible.Content>
     </Collapsible.Root>
   )

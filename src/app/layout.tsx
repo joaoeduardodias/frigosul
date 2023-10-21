@@ -20,10 +20,10 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body
         suppressHydrationWarning={true}
-        className={`${inter.className} flex  overflow-hidden bg-white antialiased`}
+        className={`${inter.className} flex   bg-white antialiased`}
       >
         <Sidebar />
-        <div className="flex-1">
+        <div className="min-h-screen flex-1 overflow-hidden ">
           <Header />
           {children}
         </div>

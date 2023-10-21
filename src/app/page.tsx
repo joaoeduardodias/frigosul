@@ -6,7 +6,7 @@ import { GraphicBar } from '../components/GraphicBar'
 export default function Home() {
   return (
     <>
-      <section className="ml-4 mt-4 flex items-center space-x-4">
+      <section className="mt-4 flex items-center space-x-4 px-4 lg:px-6">
         <div className="min-w-[15rem] space-y-4 rounded-md border border-slate-300 bg-white p-5 shadow-sm">
           <div className="flex items-center justify-between">
             <strong className="text-xs font-normal">Valor total</strong>
@@ -35,7 +35,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <main className="mt-8 grid grid-cols-2 gap-8 px-4">
+      <main className="lg:px6 mt-8 grid grid-cols-2 gap-8 px-4">
         <div className="rounded-md border p-4 ">
           <p className="ml-4 text-sm">Vendas por mês</p>
           <GraphicBar />
